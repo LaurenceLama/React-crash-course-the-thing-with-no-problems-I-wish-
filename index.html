@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React theoriessss</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Crash course overview</h1>
+    <div class="intro">
+        <h2>Intro to react</h2>
+        <p>- React is a <u>javascript</u> library to build user interfaces</p>
+        why use react?
+        <ul>
+            <li>easier to use</li>
+            <li>maintainable</li>
+            <li>scalable</li>
+            <li>most popular frontend framework</li>
+        </ul>
+        <p>lemme explain how localhost:3000 works and secretes(idk what's wrong with me) that rotating atom and the rest</p>
+        <h4>all of the "html" stuff came from app.js (pls see react-theories-course/src for the file locatings).
+            Then it is exported named 'App', which is called from index.js by importing. THEN, index.js will createRoot to render the 'App'. hope this helps</h6>
+    </div>
+    <div class="reusables">
+        <h2>Reusable components</h2>
+        <p>components help reduce code duplication</p>
+        <ol>
+            <h3>Creating a component</h3>
+            <li>
+                Create new file: "Todo.jsx"
+            </li>
+            <li>
+                Inside this file create a function: function Todo()
+            </li>
+            <li>
+                Inside the function, return some JSX: 
+            </li>
+            <li>
+                Export function: export default Todo
+            </li>
+        </ol>
+        <ol>
+            <h3>Using a component</h3>
+            <li>
+                import the file: import Todo from "./components/Todo.jsx"
+            </li>
+            <li>Use the component: (Todo /)  or the normal (Todo)(/Todo) [change parenthesisses to <,this,>]</li>
+        </ol>
+    </div>
+    <div class="props">
+        <h2>Props</h2>
+        <p>-they help at making components dynammic
+            <br>
+            dynamic = the thing were u use only 1 line but projects multiple and different results (like using API's)
+        </p>
+        <ol>
+            <h3>creating Props</h3>
+            <li>
+                Pass in the property name and value
+                <br>
+                like this (Todo propName-"Prop Value" /) but instead of () replace with <>
+            </li>
+        </ol>
+        <ol>
+            <h3>Using props</h3>
+            <li>accept props in parameter: function Todo({ propName }) {
+                <br>
+                ....
+                <br>
+            }
+            </li>
+            <li>
+                Use props: function Todo({ propName }) {
+                    <br>
+                    return (div){propName}(/div)
+                    <br>
+                }
+            </li>
+        </ol>
+        <h2>To create multiple props:</h2>
+        <p>Pass in the property name and value</p>
+        <span>(cant project but it should be <)>Todo propName="Prop Value" propTwo="Second Prop Value"/></span>
+        <ol>how to multiple props(my mind is going wuuuuuuuuu)
+            <li>
+                Accept props in parameter
+                <h4>function Todo({ propName, propTwo }) {</h4>
+                ... <br>
+                }
+            </li>
+            <li>
+                Use Props
+                <h4>function Todo({ propName, propTwo }) {</h4>
+                return <\div>{propName} {propTwo}<\div> <br>
+                }
+            </li>
+        </ol>
+        <h2>yeh this thing, basta</h2>
+        <img src="./dynamic text thing somthin.png" class="pics" alt="">
+    </div>
+    <!-- Making the react something, DO NOT OPEN FOLDER, BASTA, when error, put all files to anader folder to fix error -->
+    <div class="event__handlers">
+        <h2>Event Handles</h2>
+        <p>code that executes when an event occurs</p>
+        <ul>
+            <h3>2 events:</h3>
+            <li>onClick</li>
+            <li>onChange</li>
+        </ul>
+    </div>
+    <div class="react hooks">
+        <h2>most important hooks are: useState and useEffect</h2>
+        <ul>
+            <li>
+                <h2>useState: is how we defince variables in react</h2>
+                <h3>under useState is <b>conditional rendering</b>: rendereing a component when certiain condition is met</h3>
+                <img src="./useState things.png" class="pics" alt="">
+            </li>
+
+        </ul>
+    </div>
+</body>
+</html>
